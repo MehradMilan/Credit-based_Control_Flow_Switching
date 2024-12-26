@@ -1,0 +1,15 @@
+{
+    "switches": [
+      {"switch_id": "1", "connected_devices_ids": ["1", "2", "3", "4"]}
+    ],
+    "devices": [
+      {"device_id": "1", "buffer_capacity": 1, "send_rates": {"2": 10, "3": 20, "4": 30}, "process_rate": 10},
+      {"device_id": "2", "buffer_capacity": 1, "send_rates": {"1": 10, "3": 20, "4": 30}, "process_rate": 10},
+      {"device_id": "3", "buffer_capacity": 2, "send_rates": {"1": 10, "2": 20, "4": 30}, "process_rate": 10},
+      {"device_id": "4", "buffer_capacity": 4, "send_rates": {"1": 10, "2": 20, "3": 30}, "process_rate": 10}
+    ],
+    "packets": [
+        {"packet_type": "1", "packet_freq": 1, "packet_priority": 1, "packet_size": 0.5},
+        {"packet_type": "2", "packet_freq": 1, "packet_priority": 1, "packet_size": 0.5}
+    ]
+}  
